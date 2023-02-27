@@ -31,17 +31,14 @@ const W12MForm = () => {
 		setSurvivalReason(event.target.value);
 	  };
 	
-
-
-	  const handleSubmit = (event: { preventDefault: () => void; }) => {
-		event.preventDefault();
-	  }
+	  function handleSubmit () {console.log (speciesName)};
+	
+	
 
 	return (
 		<section className='w12MForm'>
 			<W12MHeader />
 			{/* REST OF FORM GOES HERE */
-
 			<form>
 				<div>
 					<label htmlFor="speciesName">Species Name</label>
@@ -92,10 +89,18 @@ const W12MForm = () => {
 					/>
 				</div>
 
-
-			</form>
 			
+			</form>
 			}
+
+			<div>
+					<button
+					onClick={handleSubmit}
+					>
+					Submit response
+					</button>	
+				</div>
+
 
 		</section>
 	);
