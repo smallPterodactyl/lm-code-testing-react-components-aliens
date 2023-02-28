@@ -1,0 +1,16 @@
+import  W12MForm from './W12MForm';
+
+interface SpeciesProps {
+  someSpecies : string;
+}
+
+const Species : React.FC<SpeciesProps> = (species) => {
+
+<div className="form-example">
+      <label for="form__">Species Name: </label>
+      <input type="text" name="name" id="name" required>
+  </div>
+
+  }
+
+  export default Species;
